@@ -1,11 +1,59 @@
-import React from "react";
+import React, { Component } from "react";
+import SearchBar from "../../components/search/search";
+import API from "../../utils/API";
+import PuppyDetails from "../../components/puppycard/puppycard";
 
-function Search() {
-  return (
-    <div>
-      <h2>Search your Best Friend by Breed</h2>
-    </div>
-  );
+class Search extends Component {
+  state = {
+    search: "",
+    breeds: [],
+    results: []
+  };
+
+  componentDidMount() {
+    this.breedList();
+  }
+
+  breedList = query => {
+    API.getBreedList(query)
+    .then(res => this.setState({ breeds: res.data.message}))
+    .catch(err => console.log(err))
+  }
+
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
+  searchBreed = query => {
+    API.getBreed(query)
+      .then(res => this.setState({ results: res.data.message }))
+      .catch(err => console.log(err));
+  }; 
+
+  handleSubmit = event => {
+    event.preventDefault();
+    this.searchBreed(this.state.search);
+  };
+
+  render() {
+    console.log(this.state);
+    return (
+      <div>
+        <h1>Search a Breed 🐶</h1>
+        <h5>Look for a Random Dog</h5>
+        <SearchBar
+          value={this.state.search}
+          handleInputChange={this.handleInputChange}
+          handleSubmit={this.handleSubmit}
+          breeds={this.state.breeds}
+        />
+        <PuppyDetails results={this.state.results} />
+      </div>
+    );
+  }
 }
 
 export default Search;

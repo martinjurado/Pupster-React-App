@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 
 function SearchBar(props) {
   return (
@@ -12,10 +12,19 @@ function SearchBar(props) {
           onChange={props.handleInputChange}
           className="form-control"
           name="search"
+          list="breeds"
           type="text"
+          id="breed"
         />
+        <datalist id="breeds">
+          {props.breeds.map(breed => (
+            <option value={breed} key={breed} />
+          ))}
+        </datalist>
         <br />
-        <button onClick={props.handleSubmit} className="btn btn-info">Bark!</button>
+        <button onClick={props.handleSubmit} className="btn  btn-dark">
+          Bark!
+        </button>
       </div>
     </form>
   );

@@ -4,7 +4,7 @@ function Header() {
   return (
     <div>
       <img 
-      src = "http://paperlief.com/images/golden-retriever-puppy-smiling-wallpaper-2.jpg"
+      src = "http://doanarae.com/doanarae/8207-dog-wallpapers-for-desktop_13458.jpg"
       alt = "pup"
       className="w-100"
        />

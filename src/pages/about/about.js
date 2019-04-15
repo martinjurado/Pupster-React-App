@@ -21,10 +21,8 @@ function About() {
           <div className="col caption">
             <h4>Technologies Used</h4>
             <p>
-              Ready to meet your next companion? You've come to the right place!
-              This web application will serve as your guide to the canine world.
-              You can view and like different dogs of your choice. You can also
-              search a wide array of breeds.
+              This web application is powered by React.js and Bootstrap CSS library. 
+              Moreover, this app is using a 3rd Party API called Dog API.
             </p>
           </div>
         </div>

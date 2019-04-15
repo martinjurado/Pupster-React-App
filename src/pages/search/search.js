@@ -42,6 +42,9 @@ class Search extends Component {
     console.log(this.state);
     return (
       <div>
+        <br/>
+        <br/>
+        <br/>
         <h1>Search a Breed 🐶</h1>
         <h5>Look for a Random Dog</h5>
         <SearchBar

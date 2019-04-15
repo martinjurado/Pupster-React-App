@@ -44,13 +44,15 @@ class Discover extends Component {
     
     return (
       <div>
-        <h1>Discover New Friends</h1>
-        <h4>The Tinder for Dogs</h4>
+        <br/>
+        <br />
+        <br/>
+        <h1>The Tinder for Dogs</h1>
         <RandomPup image={this.state.image} handleSubmit={this.handleSubmit} />
         <br />
         <h3>Matched {this.state.matchCount} Dogs 💖</h3>
         <Alertmessage style={{ opacity: this.state.match ? 1 : 0 }} type="success">
-          Yay! That Pup Liked You Too!!!
+          Yay! That Pup Likes You Too!!!
         </Alertmessage>
       </div>
     );

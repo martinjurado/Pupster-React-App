@@ -9,7 +9,8 @@ function Header(props) {
       alt = "pup"
       className="w-100"
        />
-      <h2 className="sub-header">Meet your New Best Friend</h2>
+      <h4 className="sub-header">Meet your New Best Friend</h4>
+      <h1>Pupster App</h1>
     </div>
   );
 }

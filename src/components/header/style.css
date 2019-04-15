@@ -8,7 +8,8 @@
 .sub-header {
   position: absolute;
   top: 40%;
-  margin-left: 24%;
+  margin-left: 25%;
+  margin-right: 2%;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: white;

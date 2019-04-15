@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./pages/about/about";
 import Discover from "./pages/discover/discover";
 import Search from "./pages/search/search";
+import Footer from "./components/footer/footer";
 import "./App.css";
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route path="/discover" exact component={Discover} />
           <Route path="/search" exact component={Search} />
         </div>
+        <Footer />
       </Router>
     );
   }

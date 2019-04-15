@@ -3,18 +3,26 @@ import { Link } from "react-router-dom";
 
 function Navtabs() {
   return (
-    <div>
-      <ul className="nav">
-        <li className="nav-item">
-          <Link to="/" className="nav-link">About</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/discover" className="nav-link">Discover</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/search" className="nav-link">Search</Link>
-        </li>
-      </ul>
+    <div className="container-fluid">
+      <nav className="navbar navbar-expand-sm navbar-dark fixed-top bg-warning">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item">
+            <Link to="/" className="nav-link">
+              Pupster
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/discover" className="nav-link">
+              Discover
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/search" className="nav-link">
+              Search
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }

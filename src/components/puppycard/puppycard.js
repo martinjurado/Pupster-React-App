@@ -5,7 +5,7 @@ function PuppyDetails(props) {
     <div>
       {props.results.map(result => (
         <div key={result} className="list-group-item">
-          <img alt="Dog" className="img-fluid dog" src={result} />
+          <img alt="Dog" className="img-fluid rounded dog" src={result} />
         </div>
       ))}
     </div>

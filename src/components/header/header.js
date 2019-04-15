@@ -1,13 +1,15 @@
 import React from "react";
+import "./style.css"
 
-function Header() {
+function Header(props) {
   return (
-    <div>
-      <img 
+    <div className="header text-center">
+       <img 
       src = "http://doanarae.com/doanarae/8207-dog-wallpapers-for-desktop_13458.jpg"
       alt = "pup"
       className="w-100"
        />
+      <h2 className="sub-header">Meet your New Best Friend</h2>
     </div>
   );
 }

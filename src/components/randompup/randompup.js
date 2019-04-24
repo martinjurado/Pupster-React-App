@@ -7,13 +7,14 @@ function RandomPup(props) {
     <div>
       <img
         alt="random"
-        className="random-dog img-thumbnail img-fluid"
+        className="random-dog img-thumbnail img-fluid animated bounceIn delay-1s"
         src={props.image}
       />
       <ControlButton
         onClick={props.handleSubmit}
         data-value="pass"
         style={{ opacity: props.image ? 1 : 0 }}
+        
       />
       <ControlButton
         onClick={props.handleSubmit}

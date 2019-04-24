@@ -45,8 +45,8 @@ class Search extends Component {
         <br/>
         <br/>
         <br/>
-        <h1>Search a Breed 🐶</h1>
-        <h5>Look for a Random Dog</h5>
+        <h1 className="animated bounceInDown">Search a Breed 🐶</h1>
+        <h5 className="animated bounceInDown">Look for a Random Dog</h5>
         <SearchBar
           value={this.state.search}
           handleInputChange={this.handleInputChange}

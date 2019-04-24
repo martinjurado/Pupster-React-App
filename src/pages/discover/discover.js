@@ -47,10 +47,10 @@ class Discover extends Component {
         <br/>
         <br />
         <br/>
-        <h1>The Tinder for Dogs</h1>
+        <h1 className="animated bounceInDown">The Tinder for Dogs</h1>
         <RandomPup image={this.state.image} handleSubmit={this.handleSubmit} />
         <br />
-        <h3>Matched {this.state.matchCount} Dogs 💖</h3>
+        <h3  className="animated bounceIn delay-2s">Matched {this.state.matchCount} Dogs 💖</h3>
         <Alertmessage style={{ opacity: this.state.match ? 1 : 0 }} type="success">
           Yay! That Pup Likes You Too!!!
         </Alertmessage>

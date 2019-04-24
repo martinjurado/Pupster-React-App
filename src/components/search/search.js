@@ -10,7 +10,7 @@ function SearchBar(props) {
           placeholder="Search for a pooch"
           value={props.value}
           onChange={props.handleInputChange}
-          className="form-control"
+          className="form-control animated bounceIn delay-1s"
           name="search"
           list="breeds"
           type="text"
@@ -22,7 +22,7 @@ function SearchBar(props) {
           ))}
         </datalist>
         <br />
-        <button onClick={props.handleSubmit} className="btn  btn-dark">
+        <button onClick={props.handleSubmit} className="btn btn-dark animated bounceIn delay-1s">
           Bark!
         </button>
       </div>
